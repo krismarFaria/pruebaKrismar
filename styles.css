@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    --blue: #02557d;
+    --white: #fff;
+    
+}
+
+.bg{
+    background-color:#fefefe ;
+}
+
+.video-opacity{
+    
+   opacity: 0.7;
+
+}
+
+.hero-section{
+    background: var(--blue);
+    position: relative; 
+    bottom: 70px;
+    
+}
+
+video{
+    width: 100%;    
+    opacity: 90%; 
+    
+}
+
+
+.toolbar{
+    width: 100%;
+    height: 50px;
+    background-color: var(--blue);
+}
+
+.border{
+    border: 0;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 20px 0;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--white);
+    border: none;
+}
+
+.imagen{
+    position: relative;
+    top: 10px;
+    width: 100px;
+    height: auto;
+    left: 65px;
+}
+
+.title-subtitle{
+    
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle{
+    color: var(--white);
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;  font-family: ;
+}
+
+@media (max-width: 991.98px) {
+  
+    video{
+        width: 100%; 
+        position: relative; 
+        bottom: 0px;
+    }
+
+
+    .imagen{
+        position: relative;
+        left: 20px;
+       top: 0;
+    width: 60px;
+    height: auto;
+}
+
+    .toolbar{
+       display: none;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+        background-color: var(--blue);
+    }
+
+    .navbar-expand-lg{
+        background-color: var(--blue);
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid var(--blue);
+        background-color: var(--blue);
+    }
+
+    
+.title-subtitle{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle{
+    color: var(--white);
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;  font-family: ;
+}
+}
+
+@media (min-width: 992px) {
+   .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+
+
+
+
+}
+
