@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
 
 :root{
     --blue: #02557d;
     --white: #fff;
-    
+    --Yellow: #feb848;
 }
+
+.card .card-header{
+    background: var(--blue);
+    border-bottom: solid;
+    border-color: var(--Yellow);
+   border-width: 5px;
+}
+
+/****************** Secciones *******************************/
 
 .bg{
     background-color:#fefefe ;
-}
-
-.video-opacity{
-    
-   opacity: 0.7;
-
 }
 
 .hero-section{
@@ -23,10 +28,10 @@
     
 }
 
-video{
-    width: 100%;    
-    opacity: 90%; 
-    
+.hero-2{
+    background-color: var(--blue);
+    width: 100%;
+    height: 300px;
 }
 
 
@@ -40,6 +45,15 @@ video{
     border: 0;
 }
 
+.hero-container{
+    position: absolute;
+    bottom: 20%;
+    left: 10px;
+    transform: translate(5%, 5%);
+}
+
+
+/****************** NavbarSeccion *******************************/
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -63,6 +77,9 @@ video{
     border: none;
 }
 
+
+
+/****************** Multimedia *******************************/
 .imagen{
     position: relative;
     top: 10px;
@@ -70,23 +87,147 @@ video{
     height: auto;
     left: 65px;
 }
+video{
+    width: 100%;    
+    opacity: 70%;     
+}
 
-.title-subtitle{
-    
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+
+/****************** Texto *******************************/
+
+.title-mobile{
+    display: none;
 }
 
 .subtitle{
     color: var(--white);
     font-size: 25px;
-    font-family: 'Nunito', sans-serif;  font-family: ;
+    font-family: 'Nunito', sans-serif;
 }
 
+.title{
+    padding-top: 10px;
+    color: var(--white);
+    font-size: 50px;
+    font-family: 'Concert One', cursive;
+}
+
+.hr{
+    color: var(--Yellow);
+    height: 25px;
+}
+
+
+
+
+/****************** Responsive *******************************/
+
+
+@media (max-width: 1200px) {
+    .hero-container{
+        display: none;
+    }
+   
+   
+    .title-mobile{
+       display: block;
+       position: absolute;
+       top: 40%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+     
+   }
+   .title-mobile .subtitle{
+       color: var(--white);
+       font-size: 25px;
+       font-family: 'Nunito', sans-serif;
+       position: relative;
+       right: 30px;
+   }
+   
+   
+   .title-mobile .title{
+       padding-top: 10px;
+       color: var(--white);
+       font-size: 30px;
+       font-family: 'Concert One', cursive;
+       text-align: justify;
+   }
+   
+   .title-mobile .hr{
+       color: var(--Yellow);
+       height: 50px;
+   }
+   
+   }
+   
+   @media (max-width: 799px){
+     
+   .title-subtitle{
+      position: relative;
+      bottom: 50px;
+   } 
+   
+   }
+
+   
+   @media (max-width: 500px){
+   .title-mobile .title-subtitle{
+          display: block;
+      }
+
+    
+  }
+
+
+
+   @media (max-width: 698px){
+     .title-subtitle{
+           display: none;
+       }
+
+       .title-mobile .title-subtitle{
+           display: block;
+       }
+
+
+       .title-mobile .title{
+           font-size: 20px;
+           position: relative;
+           bottom: 20px;
+       }
+
+       .title-mobile .subtitle{
+           font-size: 15px;
+       }
+
+
+   }
+
+
+
 @media (max-width: 991.98px) {
-  
+
+
+.subtitle{
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.title{
+
+    color: var(--white);
+    font-size: 30px;
+    font-family: 'Concert One', cursive;
+}
+
+.hr{
+    color: var(--Yellow);
+    height: 20px;
+}
+
+
     video{
         width: 100%; 
         position: relative; 
@@ -122,22 +263,9 @@ video{
     }
 
     
-.title-subtitle{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.subtitle{
-    color: var(--white);
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;  font-family: ;
-}
-}
-
-@media (min-width: 992px) {
+@media (min-width: 1201px) {
    .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -155,8 +283,10 @@ video{
         opacity: 1;
     }
 
-
-
+    .hero-2{
+        display: none;
+    }
 
 }
+
 
