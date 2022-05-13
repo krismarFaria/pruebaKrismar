@@ -16,6 +16,43 @@
 
 /****************** Secciones *******************************/
 
+/****************** NavbarSeccion *******************************/
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+    background: #02557d;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 20px 0;
+    font-weight: 500;
+    border: none;
+    outline: none;
+   
+  }
+  
+  .hola{
+      background-color: #02557d;
+      transition: 0.3s;
+  }
+
+  .hola1{
+    background-color: transparent;
+    transition: 0.3s;
+}
+  
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link.active {
+    color: var(--white);
+    border: none;
+  
+  }
+/****************** Seccion 1 *******************************/
 .bg {
   background-color: #fefefe;
 }
@@ -48,66 +85,108 @@
   transform: translate(-50%, -50%);
 }
 
-/****************** NavbarSeccion *******************************/
-.navbar .dropdown-toggle::after {
-  border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  vertical-align: middle;
-  margin-left: 8px;
-}
-
-.navbar .navbar-nav .nav-link {
-  margin-right: 30px;
-  padding: 20px 0;
-  font-weight: 500;
-  border: none;
-  outline: none;
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-  color: var(--white);
-  border: none;
-}
-
-/****************** Multimedia *******************************/
 .imagen {
-  position: relative;
-  top: 10px;
-  width: 100px;
-  height: auto;
-  left: 65px;
-}
-video {
-  width: 100%;
-  opacity: 70%;
+    position: relative;
+    top: 0;
+    width: 80px;
+    height: auto;
+    left: 65px;
+  }
+  video {
+    width: 100%;
+    opacity: 70%;
+  }
+  
+  .title-mobile {
+    display: none;
+  }
+  
+  .subtitle {
+    color: var(--white);
+    font-size: 25px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .title {
+    padding-top: 10px;
+    color: var(--white);
+    font-size: 50px;
+    font-family: "Concert One", cursive;
+  }
+  
+  .hr {
+    color: var(--Yellow);
+    height: 25px;
+  }
+  
+/****************** Seccion 2 *******************************/
+
+.segunda-seccion{
+    width: 100%;
+    height: 600px;
+    padding-lef: 20px;
+    padding-right: 20px;
 }
 
-/****************** Texto *******************************/
 
-.title-mobile {
-  display: none;
+.title-dos{
+    color: var(--blue);
+    font-family: "Nunito", sans-serif;
+    font-weight: 500 ;
+    padding-left: 10px;
 }
 
-.subtitle {
-  color: var(--white);
-  font-size: 25px;
-  font-family: "Nunito", sans-serif;
+h5{
+    color: var(--Yellow);
 }
 
-.title {
-  padding-top: 10px;
-  color: var(--white);
-  font-size: 50px;
-  font-family: "Concert One", cursive;
+h4{
+    color: var(--blue);
+    font-family: "Concert One", cursive;
+    padding-left: 20px;
+    position: relative;
+    bottom: 15px;
+    
 }
 
-.hr {
-  color: var(--Yellow);
-  height: 25px;
+.card-cursos{
+    width: 100%;
+    height: auto;
+
+    
 }
+
+.card-cursos img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid;
+    border-color: var(--blue);
+    border-width: 5px;
+    
+
+}
+
+.card-text{
+    padding: 20px;
+    border-top: solid;
+    border-color: var(--Yellow);
+    border-width: 5px;
+}
+
+
+.card-cursos p{
+    color: var(--blue);
+    font-family: "Concert One", cursive;
+
+}
+
+/****************** Seccion 3 *******************************/
+.tercera-seccion{
+    width: 100%;
+    height: 400px;
+    background-color: #c99812;
+}
+
 
 /****************** Responsive *******************************/
 
@@ -115,7 +194,15 @@ video {
   .hero-container {
     display: none;
   }
-
+  .title-mobile hr{
+    position: relative;
+    left: 17%;
+    
+}
+  
+  .hero-2{
+      padding: 20px;
+  }
   .hero-2 .title-mobile-min{
     display: none;
 }
@@ -136,6 +223,29 @@ video {
      font-size: 20px;
  }
 
+ .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    transition: 0.5s;
+   
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: 0.5s;
+  }
+
+  
+.card-cursos{
+  width: 100%;
+  height: auto;
+ 
+  
+}
 
 }
 
@@ -150,7 +260,10 @@ video {
   .hero-2 .title-mobile-min{
     display: none;
 }
-
+.title-mobile hr{
+    position: relative;
+    left: 17%;
+}
   .hero-container {
     display: none;
   }
@@ -159,6 +272,14 @@ video {
     display: block;
     padding: 20px;
   }
+
+  .hero-2 button{
+    width: 120px;
+    height: 40px;
+    background-color: #feb848;
+  
+    border-radius: 20px;
+}
 
   .subtitle {
     color: var(--white);
@@ -265,6 +386,10 @@ video {
       bottom: 20px;
       
   }
+  .hero-2 hr{
+      position: relative;
+      left: 25%;
+  }
 
  .hero-2 button{
     width: 120px;
@@ -283,6 +408,7 @@ video {
 .hero-2 .subtitle{
     font-size: 15px;
 }
+
 
   
 }
@@ -312,4 +438,53 @@ video {
   .hero-2 {
     display: none;
   }
+}
+
+
+
+/* ===================================== Boton =========================================== */
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid var(--Yellow);
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: var(--Yellow);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  outline: none;
+  padding: 10px ;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 180px;
+  will-change: transform;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+ 
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: var(--Yellow);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
