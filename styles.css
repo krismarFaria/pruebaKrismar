@@ -333,6 +333,9 @@ bottom: 60px;
 /****************** Responsive *******************************/
 
 @media (max-width: 1200px) {
+  .slide-carrusel{
+    display: none;
+  }
   .hero-container {
     display: none;
   }
@@ -399,6 +402,7 @@ bottom: 60px;
 }
 
 @media (max-width: 991.98px) {
+ 
   .container-dos{
     display: none;
   }
@@ -502,6 +506,10 @@ bottom: 60px;
   }
 
 @media (max-width: 800px) {
+ 
+  .container-cards{
+    display: block;
+  }
     .hero-2 .title-mobile-min{
         display: none;
     }
@@ -516,6 +524,13 @@ bottom: 60px;
 }
 
 @media (max-width: 783px){
+  
+  .container-cards{
+    display: none;
+  }
+  .slide-carrusel{
+    display: block;
+  }
   .container-uno{
     display: block;
   }
@@ -533,9 +548,48 @@ bottom: 60px;
  }
 
 
+ .card-team-img .image{
+  border-radius: 100%;
+  width: 90px;
+  border: solid;
+  border-color: var(--white);
+  border-width: 2px;
+  position: relative;
+  top: 30px;
+  left: 10%;
+  
+}
+
+
+.card-content{
+  position: relative;
+  bottom: 10px;
+}
+
+.card-team-content button{
+  position: relative;
+  bottom: 5px;
+}
+
+.carousel-item{
+  position: relative;
+  left: 30%;
+}
+
 }
 
 @media (max-width: 699px){
+  
+.carousel-item{
+  position: relative;
+  left: 30%;
+}
+  .slide-carrusel{
+    display: block;
+  }
+  .container-cards{
+    display: none;
+  }
     .hero-2 .title-mobile-min{
         display: none;
     }
@@ -576,7 +630,12 @@ bottom: 60px;
 
 
 @media (max-width:527px){
-
+  .container-cards{
+    display: none;
+  }
+  .slide-carrusel{
+    display: block;
+  }
     .title-mobile{
         display: none;
     }
@@ -626,7 +685,7 @@ bottom: 60px;
 
 .card-content h5{
   font-family: "Nunito", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   position: relative;
   bottom: 20px;
   left: 7px;
@@ -634,7 +693,7 @@ bottom: 60px;
 .card-content h4{
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .card-content{
@@ -648,15 +707,22 @@ bottom: 60px;
 }
 .card-team-img .image{
   border-radius: 100%;
-  width: 60px;
+  width: 90px;
   border: solid;
   border-color: var(--white);
   border-width: 2px;
   position: relative;
   top: 30px;
-  left: 10px;
+  left: 10%;
   
 }
+
+.carousel-item{
+  position: relative;
+  left: 15%;
+}
+
+
 }
 
 
@@ -683,6 +749,10 @@ bottom: 60px;
   }
   
   .container-dos{
+    display: none;
+  }
+
+  .slide-carrusel{
     display: none;
   }
 }
