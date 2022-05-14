@@ -252,6 +252,8 @@ h4{
   font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
+
+
 /****************** Seccion 5 *******************************/
 .card-img img{
   border-radius: 20px;
@@ -294,19 +296,40 @@ margin-right: auto;
 }
 
 .card-team-img{
-position: absolute;
-bottom: 80%;
+
+position: relative;
 left: 25%;
+bottom: 60px;
 }
 
 
 .card-team img{
-  width: 100%;
-  height: 90px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
+.card-content h5{
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+.card-content h4{
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card-content{
+  position: relative;
+  bottom: 25px;
+}
+
+.card-team-content button{
+  position: relative;
+  bottom: 20px;
+}
 /****************** Responsive *******************************/
 
 @media (max-width: 1200px) {
@@ -464,6 +487,17 @@ left: 25%;
      font-size: 15px;
    }
 
+   .card-team-img .image{
+    border-radius: 100%;
+    width: 90px;
+    border: solid;
+    border-color: var(--white);
+    border-width: 2px;
+    position: relative;
+    top: 5px;
+    left: 25px;
+    
+  }
 
   }
 
@@ -589,6 +623,40 @@ left: 25%;
   font-size: 15px;
 }
 
+
+.card-content h5{
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: 20px;
+  left: 7px;
+}
+.card-content h4{
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.card-content{
+  position: relative;
+  bottom: 15px;
+}
+
+.card-team-content button{
+  position: relative;
+  bottom: 10px;
+}
+.card-team-img .image{
+  border-radius: 100%;
+  width: 60px;
+  border: solid;
+  border-color: var(--white);
+  border-width: 2px;
+  position: relative;
+  top: 30px;
+  left: 10px;
+  
+}
 }
 
 
