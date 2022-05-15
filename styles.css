@@ -27,7 +27,9 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
-    background: #02557d;
+    background: linear-gradient(-45deg, #22749c, #1c77a5, #064a6d, #023e5c ); 
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
   }
   
   .navbar .navbar-nav .nav-link {
@@ -40,7 +42,9 @@
   }
   
   .hola{
-      background-color: #02557d;
+    background: linear-gradient(-45deg, #22749c, #0d567a, #064a6d, #023e5c ); 
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
       transition: 0.3s;
   }
 
@@ -178,7 +182,22 @@ h4{
 
 /****************** Seccion 3 *******************************/
 .tercera-seccion{
-    background-color: var(--blue); 
+    background: linear-gradient(-45deg, #22749c, #1c77a5, #064a6d, #023e5c ); 
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change{
+  0%{
+    background-position:  0 50%;
+  }
+
+  50%{
+    background-position:  100% 50%;
+  }
+  100%{
+    background-position:  0 50%;
+  }
 }
 
 .tercera-seccion .title-dos{
@@ -330,9 +349,53 @@ bottom: 60px;
   position: relative;
   bottom: 20px;
 }
+
+
+.card p{
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card h1{
+  font-size: 30px;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+/******************Footer *******************************/
+
+.footer{
+  background: linear-gradient(-45deg, #22749c, #1c77a5, #064a6d, #023e5c ); 
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+.seccion-siete .card{
+  width: 50%;
+}
+
 /****************** Responsive *******************************/
 
 @media (max-width: 1200px) {
+  
+  .seccion-siete .card-mobile{
+    display: none;
+  }
+  
+
+  .seccion-siete h1{
+     font-size: 15px;
+  }
+ 
+  .footer .btn-submit{
+    display: none ;
+  }
   .slide-carrusel{
     display: none;
   }
@@ -402,6 +465,33 @@ bottom: 60px;
 }
 
 @media (max-width: 991.98px) {
+  .overlay{
+    width: 500px;
+  }
+  .seccion-siete img{
+    width: 500px;
+  }
+
+  .seccion-siete .text{
+    position: relative;
+    top: -5px;
+  }
+
+  .seccion-siete h1{
+    font-size: 15px;
+  }
+
+  .seccion-siete .carrusel{
+    width: 300px;
+  }
+
+  .footer .btn-submit1{
+    display: block;
+  }
+  .img-footer img{
+    position: relative;
+    left: 200px;
+  }
  
   .container-dos{
     display: none;
@@ -506,7 +596,17 @@ bottom: 60px;
   }
 
 @media (max-width: 800px) {
- 
+  .overlay{
+    width: 400px;
+  }
+  .referencias img{
+    width: 500px;
+  }
+
+  
+  .footer .btn-submit1{
+    display: block;
+  }
   .container-cards{
     display: block;
   }
@@ -524,7 +624,42 @@ bottom: 60px;
 }
 
 @media (max-width: 783px){
-  
+
+.seccion-siete .card{
+  display: none;
+}
+
+
+.seccion-siete .card-mobile{
+  background-image: url(./imagenes/empresa.jpg);
+  display: block;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.card-mobile .name{
+position: relative;
+bottom: 50px;
+background-color: var(--white);
+right: 7%;
+padding: 3px;
+border-radius: 10px;
+width: 130px;
+}
+
+.carrusel-dos img{
+ padding: 30px;
+ position: relative;
+ right: 50px;
+}
+
+.card-mobile .carrusel-dos{
+  position: relative;
+  right: 80px;
+}
+  .footer .btn-submit1{
+    display: block;
+  }
   .container-cards{
     display: none;
   }
@@ -579,7 +714,17 @@ bottom: 60px;
 }
 
 @media (max-width: 699px){
-  
+ 
+  .footer .btn-submit1{
+    display: none;
+  }
+  .footer .btn-submit{
+    display: block;
+  }
+  .img-footer img{
+    position: relative;
+    left: 120px;
+  }
 .carousel-item{
   position: relative;
   left: 30%;
@@ -630,6 +775,18 @@ bottom: 60px;
 
 
 @media (max-width:527px){
+  .overlay{
+    width: 100%;
+  }
+  .card-mobile img{
+    position: relative;
+    left: 0;
+  }
+
+  .card-mobile .name{
+    position: relative;
+    left: 35px;
+  }
   .container-cards{
     display: none;
   }
@@ -719,14 +876,37 @@ bottom: 60px;
 
 .carousel-item{
   position: relative;
-  left: 15%;
+  left: 10%;
 }
 
 
 }
 
+
+@media (max-width:411px){
+  
+  .carousel-item{
+    position: relative;
+    left: 2%;
+  }
+  
+}
+
+@media (max-width:485px){
+  .img-footer img{
+    position: relative;
+    left: 75px;
+  }
+}
 
 @media (min-width: 1201px) {
+  .seccion-siete .card-mobile{
+    display: none;
+  }
+
+  .footer .btn-submit{
+    display: none ;
+  }
   .navbar .nav-item .dropdown-menu {
     display: block;
     visibility: hidden;
