@@ -27,7 +27,7 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
-    background: linear-gradient(-45deg, #22749c, #1c77a5, #064a6d, #023e5c ); 
+    background: linear-gradient(-45deg, #185472, #1a6a92, #064a6d, #023e5c ); 
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
   }
@@ -42,7 +42,7 @@
   }
   
   .hola{
-    background: linear-gradient(-45deg, #22749c, #0d567a, #064a6d, #023e5c ); 
+    background: linear-gradient(-45deg, #185472, #1a6a92, #064a6d, #023e5c ); 
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
       transition: 0.3s;
@@ -182,7 +182,7 @@ h4{
 
 /****************** Seccion 3 *******************************/
 .tercera-seccion{
-    background: linear-gradient(-45deg, #22749c, #1c77a5, #064a6d, #023e5c ); 
+    background: linear-gradient(-45deg, #185472, #1a6a92, #064a6d, #023e5c ); 
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
 }
@@ -371,7 +371,7 @@ bottom: 60px;
 /******************Footer *******************************/
 
 .footer{
-  background: linear-gradient(-45deg, #22749c, #1c77a5, #064a6d, #023e5c ); 
+  background: linear-gradient(-45deg, #185472, #1a6a92, #064a6d, #023e5c ); 
     background-size: 400% 400%;
     animation: change 10s ease-in-out infinite;
 }
